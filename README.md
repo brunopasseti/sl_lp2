@@ -15,4 +15,4 @@ Para listar as possíveis cores para o "cabeçalho":
 
 ## Como usar:
 
-Você pode executar o binário teste localizado em example/teste usando a sintaxe (./NOME_DO_PROGRAMA),além disso pode também executar programas que estão localizados em /bin e /usr/bin.
+Você pode executar o binário teste localizado em example/teste usando a sintaxe (./NOME_DO_PROGRAMA), além disso pode executar programas que estão localizados em /bin e /usr/bin.
