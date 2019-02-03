@@ -9,6 +9,8 @@
 #include "../include/sl.h"
 #include "../include/colors.h"
 
+//#define DEBUG 1
+
 int main(int argc, char const *argv[])
 {
   int status;
@@ -19,7 +21,7 @@ int main(int argc, char const *argv[])
   char *file = NULL;
   char *args = NULL;
   char finalpath[32] = {};
-  Shell shell = {.user = "user", .machineName="machine-pc", .fatherPid = getpid(), .PATH1="/bin", .PATH2="/usr/bin"};
+  Shell shell = {.user = "brunopasseti", .machineName="brunopasseti-pc", .fatherPid = getpid(), .PATH1="/bin", .PATH2="/usr/bin"};
   char color[8];
 
   //ENQUNTO LOOP PRINCIPAL RODA FAÇA:
@@ -103,6 +105,7 @@ int main(int argc, char const *argv[])
 
         if(err == -1)
           printf("Command \'%s\' not found!\n", file);
+          return 77;
         #if DEBUG == 1
         printf("SON PID FOR SON: %i\n", getpid());
         printf("FATHER PID FOR SON: %i\n", getppid());
